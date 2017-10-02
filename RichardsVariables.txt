@@ -1,0 +1,24 @@
+using System;
+
+namespace RichardsVariables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //define variables
+            String strFirstName;
+            String strLastName;
+
+            //ask user for each string, store response in each variable
+            Console.WriteLine("What is your first name?");
+            strFirstName = Console.ReadLine();
+            Console.WriteLine("What is your last name?");
+            strLastName = Console.ReadLine();
+
+            //output using the two user input variables
+            Console.WriteLine($"Hello, {strFirstName} {strLastName}!");
+            Console.ReadLine(); //so the program doesn't abruptly end during debugging
+        }
+    }
+}
