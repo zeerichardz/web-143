@@ -1,0 +1,16 @@
+using System;
+
+namespace RichardsHelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            String strFirstName = "MacKenzie Richards"; //defines reusable first name variable
+
+            Console.WriteLine("Hello World! My name is " + strFirstName + "."); //writes a string with variable added on;
+            Console.ReadLine(); //displays the string to the console
+        }
+    }
+}
