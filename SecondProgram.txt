@@ -1,0 +1,17 @@
+using System;
+
+namespace SecondProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String strFirstName; //new string that holds first name
+
+            Console.WriteLine("Please enter your first name: "); //output
+            strFirstName = Console.ReadLine(); //sets firstname to input on new line
+            Console.WriteLine($"Hello {strFirstName}!"); //puts firstname in output string
+            Console.ReadLine(); //new line
+        }
+    }
+}
