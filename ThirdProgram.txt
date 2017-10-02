@@ -1,0 +1,25 @@
+using System;
+
+namespace ThirdProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String strFirstName;
+            int intFirstNumber, intSecondNumber;
+
+            Console.WriteLine("Please enter your first name. ");
+            strFirstName = Console.ReadLine(); //sets string to user input
+            Console.WriteLine("Please enter your first number: ");
+            intFirstNumber = Convert.ToInt32(Console.ReadLine()); //sets var to user input converted to an integer
+            Console.WriteLine("Please enter your second number: ");
+            intSecondNumber = Convert.ToInt32(Console.ReadLine()); //sets var to user input converted to an integer
+
+            Console.WriteLine($"Hello {strFirstName}!");
+            Console.WriteLine($"{intFirstNumber} + {intSecondNumber} = {intFirstNumber + intSecondNumber}"); //adds numbers
+            Console.WriteLine($"{intFirstNumber} * {intSecondNumber} = {intFirstNumber * intSecondNumber}"); //multiplies numbers
+            Console.ReadLine();
+        }
+    }
+}
