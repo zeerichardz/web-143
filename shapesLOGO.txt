@@ -1,0 +1,44 @@
+TO drawBigTriangle 
+ REPEAT 3 [FORWARD 40 RIGHT 120]
+END
+
+TO drawSmallTriangle
+ REPEAT 3 [FORWARD 20 RIGHT 120]
+END
+
+TO drawBigSquare
+ REPEAT 4 [FORWARD 40 RIGHT 90]
+END
+
+TO drawSmallSquare
+ REPEAT 4 [FORWARD 30 RIGHT 90]
+END
+
+TO drawBigHexagon
+ REPEAT 6 [RIGHT 60 FORWARD 40]
+END
+
+TO drawRectangle
+ REPEAT 2 [FORWARD 10 RIGHT 90 FORWARD 40 RIGHT 90]
+END
+
+;moves pen to a different position so shapes do not overlap
+TO movePenRight
+ PENUP 
+ RIGHT 30
+ FORWARD 70
+ PENDOWN
+END
+
+;calls functions to draw each shape and move pen after
+drawSmallTriangle
+movePenRight
+drawBigTriangle
+movePenRight
+drawBigSquare
+movePenRight
+drawSmallSquare
+REPEAT 2 [movePenRight] ;repeated twice to avoid overlap
+drawBigHexagon
+movePenRight
+drawRectangle
