@@ -1,0 +1,19 @@
+using System;
+
+namespace DoWhileLoop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String strFirstName;
+
+            do
+            {
+                Console.WriteLine("Enter 'end' to stop. What is your name? ");
+                strFirstName = Console.ReadLine();
+                Console.WriteLine($"Hello {strFirstName}!");
+            } while (strFirstName != "end");
+        }
+    }
+}
