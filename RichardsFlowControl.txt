@@ -1,0 +1,29 @@
+using System;
+
+namespace RichardsFlowControl
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //removed strLastName as it is not used in the program
+            String strFirstName;
+
+            //ask and store user input
+            Console.WriteLine("What is your first name?");
+            strFirstName = Console.ReadLine();
+
+            if (strFirstName == "Kenzie") //if first name matches mine
+            {
+                Console.WriteLine($"Welcome back, {strFirstName}!");
+            }
+
+            else //if first name does not match mine
+            {
+                Console.WriteLine($"Hello, {strFirstName}!");
+            }
+
+            Console.ReadLine(); //so the program doesn't abruptly end during debugging
+        }
+    }
+}
