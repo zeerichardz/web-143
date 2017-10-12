@@ -1,0 +1,29 @@
+using System;
+
+namespace NestingLoops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //define variables
+            String strFirstName;
+            int intNumberofTimes, intLoopTimes;
+
+            //ask for a name and two numbers
+            do
+            {
+                Console.WriteLine("Enter end to stop. Please enter your first name: ");
+                strFirstName = Console.ReadLine();
+                Console.WriteLine("Please enter a number: ");
+                intNumberofTimes = Convert.ToInt32(Console.ReadLine()); //number of times the for loop iterates
+
+                //display output
+                for (intLoopTimes = 0; intLoopTimes < intNumberofTimes; intLoopTimes++)
+                {
+                    Console.WriteLine($"Hello {strFirstName}!");
+                }
+            } while (strFirstName != "end"); //must type in a number of times for the program to end as well
+        }
+    }
+}
