@@ -1,0 +1,27 @@
+using System;
+
+namespace TheFORLoop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //define variables
+            String strFirstName;
+            int intNumberOfTimes, intLoopTimes;
+
+            //ask for name, two numbers
+            Console.WriteLine("Please enter your first name: ");
+            strFirstName = Console.ReadLine();
+            Console.WriteLine("Please enter a number: ");
+            intNumberOfTimes = Convert.ToInt32(Console.ReadLine());
+
+            //display output
+            for (intLoopTimes = 0; intLoopTimes < intNumberOfTimes; intLoopTimes = intLoopTimes + 1)
+                {
+                Console.WriteLine($"Hello, {strFirstName}!");
+                }
+            Console.ReadLine(); //keeps debugger from closing abruptly
+        }
+    }
+}
