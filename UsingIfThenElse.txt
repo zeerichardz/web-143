@@ -1,0 +1,34 @@
+using System;
+
+namespace UsingIfThenElse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Define variables
+            String strFirstName;
+            int intFirstNumber, intSecondNumber;
+
+            //Ask for name and two numbers
+            Console.WriteLine("Please enter your first name: ");
+            strFirstName = Console.ReadLine();
+            Console.WriteLine("Please enter your first number: ");
+            intFirstNumber = Convert.ToInt32(Console.ReadLine()); //convert user input to integers
+            Console.WriteLine("Please enter your second number: ");
+            intSecondNumber = Convert.ToInt32(Console.ReadLine());
+
+            //Display output
+            if (strFirstName == "Kenzie")
+                {
+                    Console.WriteLine($"Hello {strFirstName}! I'm glad that you are here.");
+                }
+            else
+                {
+                    Console.WriteLine($"Hello {strFirstName}!");
+                }
+            Console.WriteLine($"{intFirstNumber} + {intSecondNumber} = {intFirstNumber + intSecondNumber}"); //shows numbers and their sum
+            Console.WriteLine($"{intFirstNumber} * {intSecondNumber} = {intFirstNumber * intSecondNumber}"); //shows numbers and their product
+        }
+    }
+}
